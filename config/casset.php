@@ -40,6 +40,7 @@ return array(
 	 */
 	'paths' => array(
 		'core' => 'assets/',
+		'admin'=>'assets/admin/'
 	),
 
 	/**
