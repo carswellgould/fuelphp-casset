@@ -183,6 +183,8 @@ class Casset {
 		static::$filepath_callback = \Config::get('casset.filepath_callback', static::$filepath_callback);
 
 		static::$initialized = true;
+		
+		Casset_YUICompressor::$jarFile = APPPATH.'vendor/yuicompressor-2.4.7.jar';
 	}
 
 

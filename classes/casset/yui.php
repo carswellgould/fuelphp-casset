@@ -28,7 +28,7 @@ class Casset_YUICompressor {
      *
      * @var string
      */
-    public static $jarFile = APPPATH . 'vendor/yuicompressor-2.4.7.jar';
+    public static $jarFile = null;
     
     /**
      * Writable temp directory. This must be set before calling minifyJs()
