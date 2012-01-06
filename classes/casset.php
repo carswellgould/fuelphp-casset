@@ -1074,11 +1074,11 @@ class Casset {
 						throw new Casset_Exception("Couldn't not open file {$file['file']}");
 					if ($type == 'js')
 					{
-						$content .= Casset_JSMin::minify($file_content).PHP_EOL;
+						$content .= Casset_YUICompressor::minifyJs($file_content).PHP_EOL;
 					}
 					elseif ($type == 'css')
 					{
-						$css = Casset_Csscompressor::process($file_content).PHP_EOL;
+						$css = Casset_YUICompressor::minifyCss($file_content).PHP_EOL;
 						$content .= Casset_Cssurirewriter::rewrite($css, dirname($file['file']));
 					}
 				}
